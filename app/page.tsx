@@ -126,7 +126,7 @@ export default async function Home() {
       <InvestorsListSchema investors={investors} />
 
       <div className="min-h-screen bg-background">
-        <Container id="static-content" className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <Container className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <Breadcrumbs items={breadcrumbItems} className="mb-2" />
 
           <FadeIn>
