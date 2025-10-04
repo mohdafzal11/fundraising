@@ -10,7 +10,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: ${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`;
+Sitemap: https://fundraising-seven.vercel.app/fundraising/sitemap.xml`;
 
   return new NextResponse(robotsTxt, {
     headers: {
