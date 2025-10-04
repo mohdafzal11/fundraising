@@ -117,20 +117,19 @@ export default async function Home() {
     <>
       <WebsiteSchema
         title="Top Crypto & Web3 Fundraising Tracker | DroomDroom"
-        description="Track the latest crypto and Web3 fundraising rounds, including private and public sales, on DroomDroom. Explore top projects, investors, and categories like DeFi, AI, and stablecoins."
+        description="Track crypto & Web3 fundraising on DroomDroom. Discover top projects, investors & categories like DeFi, AI & stablecoins"
         url={baseUrl}
         imageUrl={`${baseUrl}/og-image.jpg`}
       />
       <BreadcrumbSchema items={[{ name: "Home", url: baseUrl }]} />
       <ProjectListSchema projects={projects} />
       <InvestorsListSchema investors={investors} />
-      <h1>Mohd Afzal</h1>
-
+  
       <div className="min-h-screen bg-background">
         <Container className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <Breadcrumbs items={breadcrumbItems} className="mb-2" />
 
-          <FadeIn>
+          <div>
             <div className="mb-10">
               <h1 className="tracking-wider text-4xl font-extrabold text-gray-900 dark:text-white">
                 Recent Fundraising Events
@@ -140,9 +139,9 @@ export default async function Home() {
                 crypto space
               </p>
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn>
+          <div>
             <div className="bg-card rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -391,9 +390,9 @@ export default async function Home() {
                 </table>
               </div>
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn>
+          <div>
             <div className="flex justify-center mt-8">
               <Link
                 className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
@@ -415,9 +414,9 @@ export default async function Home() {
                 </svg>
               </Link>
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn>
+          <div>
             <div className="mt-20 mb-4">
               <h2 className="tracking-wider text-4xl font-extrabold text-gray-900 dark:text-white">
                 Top Active Funds
@@ -427,9 +426,9 @@ export default async function Home() {
                 ecosystem
               </p>
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn>
+          <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {investors.map((investor) => {
                 const investorLogo = investor.logo ? investor.logo : null;
@@ -473,10 +472,10 @@ export default async function Home() {
                 );
               })}
             </div>
-          </FadeIn>
+          </div>
 
           {investors.length === 0 && (
-            <FadeIn>
+            <div>
               <div className="text-center py-16">
                 <div className="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg
@@ -500,10 +499,10 @@ export default async function Home() {
                   Check back later for active investment funds
                 </p>
               </div>
-            </FadeIn>
+            </div>
           )}
 
-          <FadeIn>
+          <div>
             <div className="flex justify-center mt-8">
               <Link
                 className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
@@ -525,13 +524,8 @@ export default async function Home() {
                 </svg>
               </Link>
             </div>
-          </FadeIn>
+          </div>
         </Container>
-
-        {/* <HomePageClient
-          initialProjects={projects}
-          initialInvestors={investors}
-        /> */}
       </div>
     </>
   );
