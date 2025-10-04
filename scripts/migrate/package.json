@@ -1,0 +1,21 @@
+{
+  "name": "mongodb-to-postgres-migration",
+  "version": "1.0.0",
+  "description": "Migration script from MongoDB to PostgreSQL using Prisma",
+  "type": "module",
+  "main": "migrate.js",
+  "scripts": {
+    "migrate": "node migrate.js",
+    "generate:mongo": "prisma generate --schema=./prisma/mongodb.prisma",
+    "generate:postgres": "prisma generate --schema=./prisma/postgres.prisma",
+    "generate:all": "npm run generate:mongo && npm run generate:postgres",
+    "push:postgres": "prisma db push --schema=./prisma/postgres.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "6.16.2",
+    "prisma": "6.16.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}

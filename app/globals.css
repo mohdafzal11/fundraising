@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  height: 4px; 
+  width: 4px;   
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #94a3b8; 
+  border-radius: 9999px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 transparent;
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .animate-fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+  
+  .animate-slide-in-from-top {
+    animation: slideInFromTop 0.3s ease-out forwards;
+  }
+  
+  .animate-slide-out-to-top {
+    animation: slideOutToTop 0.3s ease-in forwards;
+  }
+  
+  .animate-slide-in-from-bottom {
+    animation: slideInFromBottom 0.3s ease-out forwards;
+  }
+  
+  .animate-slide-out-to-bottom {
+    animation: slideOutToBottom 0.3s ease-in forwards;
+  }
+  
+  .animate-pulse-subtle {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-marquee {
+    animation: marquee 180s linear infinite;
+    min-width: max-content;
+    white-space: nowrap;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    @apply w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300;
+  }
+
+  .form-label {
+    @apply text-sm font-medium text-foreground mb-1 block;
+  }
+
+  .card-hover {
+    @apply hover:shadow-md transition-all duration-300 hover:translate-y-[-2px];
+  }
+  
+  .interactive-element {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold tracking-tight text-foreground mb-6;
+  }
+  
+  .section-subtitle {
+    @apply text-lg font-medium text-muted-foreground mb-4;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slideInFromTop {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideOutToTop {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-10px); opacity: 0; }
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideOutToBottom {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(10px); opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 250 95% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 250 50% 95%;
+    --secondary-foreground: 250 70% 40%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 250 50% 95%;
+    --accent-foreground: 250 70% 40%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 250 30% 90%;
+    --input: 250 30% 90%;
+    --ring: 250 95% 60%;
+    --chart-1: 250 95% 60%;
+    --chart-2: 250 70% 50%;
+    --chart-3: 250 50% 40%;
+    --chart-4: 250 30% 30%;
+    --chart-5: 250 10% 20%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 250 95% 65%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 250 40% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 250 40% 25%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 250 30% 25%;
+    --input: 250 30% 25%;
+    --ring: 250 95% 65%;
+    --chart-1: 250 95% 65%;
+    --chart-2: 250 75% 55%;
+    --chart-3: 250 55% 45%;
+    --chart-4: 250 35% 35%;
+    --chart-5: 250 15% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  } 
+}
+.hidden{
+  display: none !important;
+}
+
+.calendar-no-header div div div {
+  display: none !important;
+}
+
+
+.toc-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .toc-nav {
+    display: flex;
+  }
+}
+
+.prose ul, .prose ol {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100% !important;
+  padding-left: 1.5rem !important;
+  white-space: normal !important;
+}
+.prose li {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+}
+
+#static-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

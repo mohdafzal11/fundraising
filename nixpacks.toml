@@ -1,0 +1,51 @@
+[phases.setup]
+nixPkgs = ["nodejs_18", "pnpm-9_x", "openssl"]
+nixLibs = ["libuuid", "libGL"]
+aptPkgs = [
+  # Puppeteer dependencies
+  "libnss3",
+  "libatk1.0-0",
+  "libatk-bridge2.0-0",
+  "libcups2",
+  "libgbm1",
+  "libasound2t64",
+  "libpangocairo-1.0-0",
+  "libxss1",
+  "libgtk-3-0",
+  "libxshmfence1",
+  "libglu1",
+  "chromium",
+  "curl",
+  "wget",
+  # Screen for background process
+  "screen",
+  "procps",
+  # Canvas native dependencies
+  "build-essential",
+  "libcairo2-dev",
+  "libpango1.0-dev",
+  "libjpeg-dev",
+  "libgif-dev",
+  "librsvg2-dev",
+  "libpixman-1-dev"
+]
+
+[phases.install]
+cmds = [
+  "pnpm install --frozen-lockfile",
+  "npx puppeteer browsers install chrome"
+]
+
+[phases.build]
+cmds = [
+  "pnpm run build",
+  "chmod +x /app/start.sh"
+]
+
+[variables]
+PUPPETEER_CACHE_DIR = "/app/.cache/puppeteer"
+PUPPETEER_SKIP_DOWNLOAD = "false"
+
+[start]
+cmd = "bash /app/start.sh"
+

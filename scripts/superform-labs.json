@@ -1,0 +1,181 @@
+[{
+  "success": true,
+  "data": {
+    "name": "Superform Labs",
+    "about": "Superform is a permissionless cross-chain yield marketplace designed for DeFi protocols, allowing them to list their vaults or asset pools. Users can deposit funds into these vaults and earn yield, with Superform simplifying the process by abstracting away swapping and bridging, offering a single interface for yield management.",
+    "categories": [
+      "DeFi",
+      "DApp",
+      "Infrastructure",
+      "Interoperability",
+      "Marketplace",
+      "Multichain"
+    ],
+    "links": {
+      "website": "https://www.superform.xyz/",
+      "social": [
+        {
+          "platform": "X (ex Twitter)",
+          "url": "https://twitter.com/superformxyz"
+        },
+        {
+          "platform": "Telegram",
+          "url": "https://t.me/superformxyz"
+        }
+      ]
+    },
+    "funding_rounds": [
+      {
+        "date": "Sep 2025",
+        "amount": {
+          "numeric": 1420069,
+          "text": "$1.42M"
+        },
+        "round_type": "Public sale",
+        "details_link": "https://x.com/superformxyz/status/1968329449851789639",
+        "lead_investors": [],
+        "investors": [
+          {
+            "name": "Individual investors",
+            "url": null,
+            "logo": null
+          }
+        ]
+      },
+      {
+        "date": "Dec 2024",
+        "amount": {
+          "numeric": 3000000,
+          "text": "$3M"
+        },
+        "round_type": "Strategic",
+        "details_link": "https://chainwire.org/2024/12/12/superform-raises-3m-to-launch-supervaults-intelligent-onchain-high-yield-products-led-by-vaneck-ventures/",
+        "lead_investors": [
+          {
+            "name": "VanEck",
+            "url": "https://crypto-fundraising.info/funds/vaneck",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/05/VanEck-1.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "VanEck",
+            "url": "https://crypto-fundraising.info/funds/vaneck",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/05/VanEck-1.png"
+          },
+          {
+            "name": "Polychain Capital",
+            "url": "https://crypto-fundraising.info/funds/polychain-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/polychain.png"
+          },
+          {
+            "name": "CMT Digital",
+            "url": "https://crypto-fundraising.info/funds/cmt-digital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/Funds/CMT_Digital.png"
+          },
+          {
+            "name": "Amber Group",
+            "url": "https://crypto-fundraising.info/funds/amber-group",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/04/Amber-Group.png"
+          },
+          {
+            "name": "Node Capital",
+            "url": "https://crypto-fundraising.info/funds/node-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/04/Node.png"
+          },
+          {
+            "name": "Strobe Ventures (ex BlockTower Capital)",
+            "url": "https://crypto-fundraising.info/funds/blocktower-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/Strobe-Ventures.png"
+          },
+          {
+            "name": "Heartcore Capital",
+            "url": "https://crypto-fundraising.info/funds/heartcore-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2023/11/Heartcore-Capital.png"
+          },
+          {
+            "name": "Maven 11 Capital",
+            "url": "https://crypto-fundraising.info/funds/maven-11-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/6-EmqEjr.png-small-e1686830494250.png"
+          },
+          {
+            "name": "UpTop",
+            "url": "https://crypto-fundraising.info/funds/uptop",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2024/12/UpTop.png"
+          }
+        ]
+      },
+      {
+        "date": "Feb 2024",
+        "amount": {
+          "numeric": 6500000,
+          "text": "$6.50M"
+        },
+        "round_type": "Seed",
+        "details_link": "https://www.theblock.co/post/276631/crypto-yield-marketplace-superform-raises-funding",
+        "lead_investors": [
+          {
+            "name": "Polychain Capital",
+            "url": "https://crypto-fundraising.info/funds/polychain-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/polychain.png"
+          }
+        ],
+        "investors": [
+          {
+            "name": "Polychain Capital",
+            "url": "https://crypto-fundraising.info/funds/polychain-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/polychain.png"
+          },
+          {
+            "name": "Strobe Ventures (ex BlockTower Capital)",
+            "url": "https://crypto-fundraising.info/funds/blocktower-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/Strobe-Ventures.png"
+          },
+          {
+            "name": "Maven 11 Capital",
+            "url": "https://crypto-fundraising.info/funds/maven-11-capital",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/02/6-EmqEjr.png-small-e1686830494250.png"
+          },
+          {
+            "name": "Circle Ventures",
+            "url": "https://crypto-fundraising.info/funds/circle-ventures",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2022/04/Circle-Ventures_.png"
+          },
+          {
+            "name": "Arthur Hayes",
+            "url": "https://crypto-fundraising.info/funds/arthur-hayes",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2023/02/Arthur-Hayes.png"
+          },
+          {
+            "name": "Marc Bhargava",
+            "url": "https://crypto-fundraising.info/funds/marc-bhargava",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2024/02/Marc-Bhargava.png"
+          },
+          {
+            "name": "Avi Felman",
+            "url": "https://crypto-fundraising.info/funds/avi-felman",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2024/02/Avi-Felman.png"
+          },
+          {
+            "name": "Michael Bucella",
+            "url": "https://crypto-fundraising.info/funds/michael-bucella",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2024/02/Michael-Bucella.png"
+          },
+          {
+            "name": "Bryan Pellegrino",
+            "url": "https://crypto-fundraising.info/funds/bryan-pellegrino",
+            "logo": "https://crypto-fundraising.info/wp-content/uploads/funds/2024/02/Bryan-Pellegrino.png"
+          }
+        ]
+      }
+    ],
+    "total_raised": {
+      "amount_numeric": 10920069,
+      "amount_text": "$10.92M"
+    },
+    "scraped_at": "2025-09-17T22:12:05.742Z",
+    "url": "https://crypto-fundraising.info/projects/superform-labs/",
+    "original_name": "Superform Labs"
+  },
+  "attempts": 1
+}]
