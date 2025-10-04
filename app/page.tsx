@@ -124,9 +124,9 @@ export default async function Home() {
       <BreadcrumbSchema items={[{ name: "Home", url: baseUrl }]} />
       <ProjectListSchema projects={projects} />
       <InvestorsListSchema investors={investors} />
-  
+
       <div className="min-h-screen bg-background">
-        <Container className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <Container id="static-content" className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <Breadcrumbs items={breadcrumbItems} className="mb-2" />
 
           <div>
@@ -526,6 +526,11 @@ export default async function Home() {
             </div>
           </div>
         </Container>
+
+        <HomePageClient
+          initialProjects={projects}
+          initialInvestors={investors}
+        />
       </div>
     </>
   );
