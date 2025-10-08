@@ -75,6 +75,9 @@ export const metadata: Metadata = {
       height: 630,
     },
   },
+  icons: {
+    apple: "/180x180.png",
+  },
   other: {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-title": "DroomDroom Fundraising",
